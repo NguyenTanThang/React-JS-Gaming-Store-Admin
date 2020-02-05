@@ -23,6 +23,13 @@ class AddProduct extends Component {
         e.preventDefault();
 
         const {name, price, url, desc} = this.state;
+        console.log({
+            productName: name,
+            productPrice: parseFloat(price),
+            productImgURL: url,
+            productDescription: desc 
+        });
+
         this.props.addProduct({
             productName: name,
             productPrice: parseFloat(price),
@@ -36,7 +43,9 @@ class AddProduct extends Component {
             url: "",
             desc: ""
         }, () => {
-            window.location.reload();
+            setTimeout(() => {
+                window.location.reload();
+            }, 1000)
         })
 
     }

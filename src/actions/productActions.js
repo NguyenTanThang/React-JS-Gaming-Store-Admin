@@ -56,7 +56,9 @@ export const addProduct = (newProductItem) => {
             console.log(response.data);
             return dispatch({
                 type: ADD_PRODUCT,
-                createdProduct: response.data.createdProduct
+                payload: {
+                    createdProduct: response.data.createdProduct
+                }
             })
         })
         .catch(err => {
