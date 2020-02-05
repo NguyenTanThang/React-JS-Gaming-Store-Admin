@@ -35,9 +35,10 @@ class AddProduct extends Component {
             price: "",
             url: "",
             desc: ""
+        }, () => {
+            window.location.reload();
         })
 
-        window.location.reload();
     }
 
     render() {
