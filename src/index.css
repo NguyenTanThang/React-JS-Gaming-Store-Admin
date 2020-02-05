@@ -1,0 +1,11 @@
+.product-item .card{
+  min-height: 400px;
+}
+
+.product-item{
+  margin-bottom: 30px;
+}
+
+#add-product-form .row > *{
+  margin-bottom: 20px;
+}
